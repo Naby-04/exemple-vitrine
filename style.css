@@ -110,6 +110,13 @@ h2 {
   height: 100vh;
 }
 /*----------------------------- banner section exit -----------------------------*/
+
+/*------------------------------ company-wrapper ------------------------------*/
+.company-wrapper img {
+  max-height: 70px;
+}
+/*------------------------------ company-wrapperexit ------------------------------*/
+
 /*------------------------- contact section -------------------------*/
 .contact-wrapper {
   background: url(images/map-image.png);
@@ -127,6 +134,7 @@ textarea {
   padding: 10px;
 }
 /*------------------------- contact section exit -------------------------*/
+
 /*------------------------- footer -------------------------*/
 footer {
   background: #fff;
