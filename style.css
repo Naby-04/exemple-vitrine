@@ -1,0 +1,144 @@
+/* TABLE OF CONTENTS */
+/* -------------------
+1.General
+2.Navbar
+3.Banner
+4.About
+5.Services
+6.Portfolio
+7.Contacts
+8.Footer
+--------------------*/
+
+/* 1. General */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid red; */
+}
+
+:root {
+  /* Background Color */
+  --primary-color: #d9aa00;
+  --secondary-color: #6c757d;
+
+  /* Text Color */
+  --primary-font: "Poppins", sans-serif;
+  --primary-text: #212529;
+  --text-yellow: #ffc800;
+  --text-white: #fff;
+  --text-gray: #c6c9d8bf;
+  --link-bg: #212529;
+}
+
+body {
+  font-family: var(--primary-font);
+}
+a {
+  text-decoration: none;
+}
+/* general */
+.button-active {
+  background: var(--text-yellow);
+  padding: 20px 40px;
+  line-height: 27px;
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: var(--text-white);
+  border-radius: 6px;
+  border: none;
+  max-width: 300px;
+}
+.button-active:hover {
+  background: #d9aa00;
+}
+h1 {
+  color: var(--text-white);
+}
+h2 {
+  color: var(--text-white);
+  font-size: 90px !important;
+}
+/* .title{} */
+/* -----------------------header section -----------------------*/
+.header_wrapper .navbar-brand img {
+  width: 170px;
+  height: auto;
+}
+.header_wrapper .navbar-toggler:focus {
+  box-shadow: none;
+}
+.header_wrapper .nav-item {
+  margin: 0 10px;
+}
+.header_wrapper .nav-item .nav-link {
+  position: relative;
+  font-size: 16px;
+  font-weight: 200;
+  color: var(--text-white);
+  display: inline-block;
+}
+.header_wrapper .nav-item .nav-link .active,
+.header_wrapper .nav-item .nav-link:hover {
+  color: var(--text-yellow);
+}
+.header-scrolled {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--primary-text);
+  -webkit-box-shadow: 0 4px 6px 0 rgba(12, 0, 46, 0.05);
+  box-shadow: 0 4px 6px 0 rgba(12, 0, 46, 0.05);
+}
+.header_scrolled .nav-item .nav-link .active,
+.header_scrolled .nav-item .nav-link:hover {
+  color: var(--text-yellow);
+}
+
+/*----------------------- header section exit -----------------------*/
+/*----------------------------- banner section -----------------------------*/
+.banner-wrapper {
+  background: url(images/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+/*----------------------------- banner section exit -----------------------------*/
+/*------------------------- contact section -------------------------*/
+.contact-wrapper {
+  background: url(images/map-image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* height: 100vh; */
+}
+.contact-wrapper input {
+  height: 70px;
+}
+textarea {
+  max-height: 242px;
+  height: 242px;
+  padding: 10px;
+}
+/*------------------------- contact section exit -------------------------*/
+/*------------------------- footer -------------------------*/
+footer {
+  background: #fff;
+}
+.list-unstyled li a {
+  padding: 10px;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  background: var(--link-bg) !important;
+}
+footer p a {
+  color: var(--primary-text) !important;
+}
+/*------------------------- footer exit -------------------------*/
