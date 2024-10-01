@@ -17,7 +17,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 :root {
@@ -61,7 +61,6 @@ h1 {
   color: var(--text-white);
 }
 h2 {
-  color: var(--text-white);
   font-size: 90px !important;
 }
 .title h2 {
@@ -71,40 +70,45 @@ h2 {
   color: var(--text-gray) !important;
 }
 /* -----------------------header section -----------------------*/
-.header_wrapper .navbar-brand img {
+.header-wrapper .navbar-brand img {
   width: 170px;
   height: auto;
 }
-.header_wrapper .navbar-toggler:focus {
+.header-wrapper .navbar-toggler {
+  background: #000;
+}
+.header-wrapper .navbar-toggler:focus {
   box-shadow: none;
 }
-.header_wrapper .nav-item {
+.header-wrapper .nav-item {
   margin: 0 10px;
 }
-.header_wrapper .nav-item .nav-link {
+.header-wrapper .nav-item .nav-link {
   position: relative;
   font-size: 16px;
   font-weight: 200;
   color: var(--text-white);
   display: inline-block;
 }
-.header_wrapper .nav-item .nav-link .active,
-.header_wrapper .nav-item .nav-link:hover {
+.header-wrapper .nav-item .nav-link .active,
+.header-wrapper .nav-item .nav-link:hover {
   color: var(--text-yellow);
 }
 .header-scrolled {
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: var(--primary-text);
-  -webkit-box-shadow: 0 4px 6px 0 rgba(12, 0, 46, 0.05);
-  box-shadow: 0 4px 6px 0 rgba(12, 0, 46, 0.05);
+  height: 60px;
+  background-color: var(--primary-text) !important;
+  -webkit-box-shadow: 0 4px 6px 0 rgba(12, 0, 46, 0.05) !important;
+  box-shadow: 0 4px 6px 0 rgba(12, 0, 46, 0.05) !important;
 }
-.header_scrolled .nav-item .nav-link .active,
-.header_scrolled .nav-item .nav-link:hover {
-  color: var(--text-yellow);
+.header-scrolled .nav-item .nav-link .active,
+.header-scrolled .nav-item .nav-link:hover {
+  color: var(--text-yellow) !important;
 }
+
+/* position: fixed; */
 
 /*----------------------- header section exit -----------------------*/
 /*----------------------------- banner section -----------------------------*/
@@ -115,11 +119,34 @@ h2 {
   background-position: center;
   height: 100vh;
 }
+.banner-wrapper h2 {
+  color: var(--text-white);
+}
 /*----------------------------- banner section exit -----------------------------*/
 
+/*------------------------------- services section -------------------------------*/
+.service-icon {
+  background: var(--text-yellow);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+.service-wrapper .card {
+  border: none !important;
+}
+/*------------------------------- services section exit -------------------------------*/
+
+/*------------------------------- portfolio section -------------------------------*/
+.card {
+  margin: 5px !important;
+  /* border: none; */
+}
+/*------------------------------- portfolio section exit -------------------------------*/
+
 /*-------------------------------- team section --------------------------------*/
-.team-wrapper {
-  background: #f8f9fa;
+.team-wrapper,
+.porfolio-wrapper {
+  background: #f8f9fa !important;
   padding: 10px 70px;
 }
 .team-wrapper .title h2,
@@ -132,21 +159,26 @@ h2 {
   border-radius: 50%;
   border: 10px solid var(--secondary-color);
 }
-.card {
+.team-wrapper .card {
   border: none !important;
   background: transparent !important;
 }
+.card {
+  min-width: 163px;
+}
 .subtitle h2 {
   font-weight: 600;
+  min-width: 125px;
 }
 .subtitle p {
   color: var(--secondary-color);
+  min-width: 125px;
 }
 /*-------------------------------- team section --------------------------------*/
 
 /*------------------------------ company-wrapper ------------------------------*/
 .company-wrapper img {
-  max-height: 70px;
+  max-height: 40px;
 }
 /*------------------------------ company-wrapperexit ------------------------------*/
 
@@ -157,6 +189,9 @@ h2 {
   background-size: cover;
   background-position: center;
   /* height: 100vh; */
+}
+.contact-wrapper h2 {
+  color: var(--text-white);
 }
 .contact-wrapper input {
   height: 70px;
@@ -172,6 +207,9 @@ textarea {
 footer {
   background: #fff;
 }
+footer p {
+  /* min-width: 150px !important; */
+}
 .list-unstyled li a {
   padding: 10px 13px;
   border-radius: 50%;
@@ -184,3 +222,21 @@ footer p a {
   color: var(--primary-text) !important;
 }
 /*------------------------- footer exit -------------------------*/
+/*------------------ responsivite ------------------*/
+@media (max-width: 767px) {
+  .banner-wrapper h1 {
+    font-size: 20px !important;
+    margin-bottom: 20px;
+  }
+  .banner-wrapper h2 {
+    font-size: 30px !important;
+  }
+  .list-unstyled {
+    /* margin: 30px 0px; */
+  }
+  footer p {
+    margin-top: 30px;
+  }
+  textarea {
+  }
+}
