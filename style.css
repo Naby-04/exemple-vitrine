@@ -39,6 +39,7 @@ body {
 }
 a {
   text-decoration: none;
+  color: #fff !important;
 }
 /* general */
 .button-active {
@@ -63,7 +64,12 @@ h2 {
   color: var(--text-white);
   font-size: 90px !important;
 }
-/* .title{} */
+.title h2 {
+  font-weight: 700;
+}
+.title p {
+  color: var(--text-gray) !important;
+}
 /* -----------------------header section -----------------------*/
 .header_wrapper .navbar-brand img {
   width: 170px;
@@ -111,6 +117,33 @@ h2 {
 }
 /*----------------------------- banner section exit -----------------------------*/
 
+/*-------------------------------- team section --------------------------------*/
+.team-wrapper {
+  background: #f8f9fa;
+  padding: 10px 70px;
+}
+.team-wrapper .title h2,
+.subtitle h2 {
+  color: var(--primary-text) !important;
+}
+.team-wrapper img {
+  max-height: 340px;
+  max-width: 355px;
+  border-radius: 50%;
+  border: 10px solid var(--secondary-color);
+}
+.card {
+  border: none !important;
+  background: transparent !important;
+}
+.subtitle h2 {
+  font-weight: 600;
+}
+.subtitle p {
+  color: var(--secondary-color);
+}
+/*-------------------------------- team section --------------------------------*/
+
 /*------------------------------ company-wrapper ------------------------------*/
 .company-wrapper img {
   max-height: 70px;
@@ -140,11 +173,12 @@ footer {
   background: #fff;
 }
 .list-unstyled li a {
-  padding: 10px;
+  padding: 10px 13px;
   border-radius: 50%;
-  height: 40px;
-  width: 40px;
   background: var(--link-bg) !important;
+}
+.list-unstyled li a:hover {
+  background: var(--secondary-color) !important;
 }
 footer p a {
   color: var(--primary-text) !important;
