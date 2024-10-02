@@ -139,7 +139,7 @@ h2 {
 /*------------------------------- portfolio section -------------------------------*/
 .card {
   margin: 5px !important;
-  /* border: none; */
+  border: none;
 }
 /*------------------------------- portfolio section exit -------------------------------*/
 
@@ -147,7 +147,7 @@ h2 {
 .team-wrapper,
 .porfolio-wrapper {
   background: #f8f9fa !important;
-  padding: 10px 70px;
+  padding: 0px 70px;
 }
 .team-wrapper .title h2,
 .subtitle h2 {
@@ -207,9 +207,9 @@ textarea {
 footer {
   background: #fff;
 }
-footer p {
-  /* min-width: 150px !important; */
-}
+/* footer p { */
+/* min-width: 150px !important; */
+/* } */
 .list-unstyled li a {
   padding: 10px 13px;
   border-radius: 50%;
@@ -231,12 +231,12 @@ footer p a {
   .banner-wrapper h2 {
     font-size: 30px !important;
   }
-  .list-unstyled {
-    /* margin: 30px 0px; */
-  }
-  footer p {
+  /* .list-unstyled { */
+  /* margin: 30px 0px; */
+  /* } */
+  /* footer p {
     margin-top: 30px;
   }
   textarea {
-  }
+  } */
 }
