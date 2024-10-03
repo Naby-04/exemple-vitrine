@@ -175,7 +175,7 @@ h2 {
   max-width: 130px;
   max-height: 130px;
   border-radius: 50%;
-  border: 5px solid var(--secondary-color);
+  border: 8px solid var(--text-gray);
   overflow: hidden;
   margin-left: -62px;
   position: absolute;
@@ -199,7 +199,7 @@ h2 {
   text-align: end;
 }
 .main_timeline .timeline-container.right {
-  right: -65px;
+  right: -60px;
   float: right;
 }
 .main_timeline .timeline-container.right h2,
@@ -243,6 +243,27 @@ h2 {
   .main_timeline .timeline-title {
     font-size: 20px;
   }
+}
+.last-timeline-img {
+  position: relative;
+}
+.last-timeline-img .last_img {
+  position: relative;
+  left: 45%;
+  bottom: -20px;
+  border-radius: 50%;
+  border: 8px solid var(--text-gray);
+  background: var(--text-yellow);
+  height: 120px;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-white);
+  font-weight: 500;
+  padding: 10px;
+  overflow: hidden;
+  box-shadow: 0px 0px 35px 15px var(--text-gray);
 }
 /*--------------------------------- About us section exit----------------------------------*/
 
