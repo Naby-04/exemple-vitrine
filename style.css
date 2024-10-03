@@ -217,7 +217,7 @@ h2 {
     margin-left: 20px;
   }
   .main_timeline::before {
-    left: 0;
+    left: 30px !important;
   }
   .main_timeline .timeline-container {
     width: 90%;
@@ -226,14 +226,23 @@ h2 {
   .main_timeline .timeline-img img {
     max-height: 50px;
     max-width: 50px;
-    left: -13px !important;
+    left: 19px !important;
   }
   .main_timeline .timeline-title h2,
   .subtitles {
     text-align: start !important;
   }
   .main_timeline .timeline-container.right {
-    left: -50px;
+    left: -25px !important;
+  }
+  .main_timeline .timeline-container {
+    left: -45px;
+  }
+  .last-timeline-img .last_img {
+    left: -68px !important;
+    max-height: 100px;
+    max-width: 100px;
+    font-size: 12px;
   }
 }
 @media only screen and (max-width: 479px) {
@@ -244,9 +253,9 @@ h2 {
     font-size: 20px;
   }
 }
-.last-timeline-img {
+/* .last-timeline-img {
   position: relative;
-}
+} */
 .last-timeline-img .last_img {
   position: relative;
   left: 45%;
