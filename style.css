@@ -17,7 +17,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 :root {
@@ -142,6 +142,109 @@ h2 {
   border: none;
 }
 /*------------------------------- portfolio section exit -------------------------------*/
+
+/*-------------------------------------- About us section --------------------------------------*/
+.main_timeline {
+  position: relative;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+.main_timeline::before {
+  content: "";
+  width: 3px;
+  height: 100%;
+  background: var(--secondary-color);
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+.main_timeline .timeline {
+  margin: 50px;
+  position: relative;
+}
+.main_timeline .timeline::before,
+.main_timeline .timeline::after {
+  content: "";
+  display: block;
+  width: 100%;
+  clear: both;
+}
+.main_timeline .timeline-img img {
+  max-width: 130px;
+  max-height: 130px;
+  border-radius: 50%;
+  border: 5px solid var(--secondary-color);
+  overflow: hidden;
+  margin-left: -62px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+.main_timeline .timeline-container {
+  width: 45%;
+  padding: 20px;
+  position: relative;
+  top: -50px;
+  right: 70px;
+}
+.main_timeline .timeline-title h2 {
+  text-align: end;
+  font-size: 30px !important;
+  font-weight: 500;
+}
+.main_timeline .subtitles {
+  font-size: 14px;
+  text-align: end;
+}
+.main_timeline .timeline-container.right {
+  right: -65px;
+  float: right;
+}
+.main_timeline .timeline-container.right h2,
+.main_timeline .timeline-container.right .subtitles {
+  text-align: start;
+}
+/* responsivite timeline */
+@media only screen and (max-width: 990px) {
+  .main_timeline .timeline-title {
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .main_timeline {
+    margin-left: 20px;
+  }
+  .main_timeline::before {
+    left: 0;
+  }
+  .main_timeline .timeline-container {
+    width: 90%;
+    float: right;
+  }
+  .main_timeline .timeline-img img {
+    max-height: 50px;
+    max-width: 50px;
+    left: -13px !important;
+  }
+  .main_timeline .timeline-title h2,
+  .subtitles {
+    text-align: start !important;
+  }
+  .main_timeline .timeline-container.right {
+    left: -50px;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .main_timeline .timeline-container {
+    width: 85%;
+  }
+  .main_timeline .timeline-title {
+    font-size: 20px;
+  }
+}
+/*--------------------------------- About us section exit----------------------------------*/
 
 /*-------------------------------- team section --------------------------------*/
 .team-wrapper,
